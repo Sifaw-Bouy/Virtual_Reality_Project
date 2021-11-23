@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Timercounter : MonoBehaviour
 {
-    public float countTval = 110;
+    public static float countTval = 300;
     public Text countTimer;
     void Update()
     {
@@ -26,4 +26,5 @@ public class Timercounter : MonoBehaviour
         sec = Mathf.FloorToInt(time % 60);//get the seconds
         countTimer.text = string.Format("{0:00}:{1:00}", min,sec);
     }
+    
 }
